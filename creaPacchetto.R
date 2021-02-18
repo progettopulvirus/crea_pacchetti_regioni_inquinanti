@@ -37,7 +37,8 @@ purrr::walk(listaDirectory,.f=function(nomeDirectory){
   
   purrr::walk(nomiInquinanti,.f=function(nome){
     readr::read_delim(nome,delim=";",col_names=TRUE)->dati
-    stringr::str_extract(nome,"^[a-z0-9]+")->inquinante
+    stringr::str_remove(nome,"_[a-z]+\\.csv$")->inquinante
+
     assign(eval(inquinante),dati)
     rm(dati)
     
