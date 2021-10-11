@@ -18,8 +18,8 @@
 #Infine: il prohramma github.sh provvederea' a fare add->commit->push
 
 #Attenzione questo vettore va aggiornato qualora vi fossero nuovi repository su github
-regioni=("basilicata" "campania" "emiliaromagna" "friuliveneziagiulia" "lazio" \
-"lombardia" "molise" "pabolzano" "patrento" "piemonte" "puglia" "sardegna" "sicilia" \
+regioni=("abruzzo" "basilicata" "calabria" "campania" "emiliaromagna" "friuliveneziagiulia" "lazio" "liguria" \
+"lombardia" "marche" "molise" "pabolzano" "patrento" "piemonte" "puglia" "sardegna" "sicilia" \
 "toscana" "umbria" "valleaosta" "veneto")
 
 for i in ${regioni[*]};do
